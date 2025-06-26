@@ -30,6 +30,28 @@ import StoreCost from '@/views/store/StoreCost.vue'
 import StoreHcm from '@/views/store/StoreHcm.vue'
 import StoreTax from '@/views/store/StoreTax.vue'
 
+//好思通模組
+import SynetHome from '@/views/synet/SynetHome.vue'
+import SynetAnalysis from '@/views/synet/SynetAnalysis.vue'
+import SynetCost from '@/views/synet/SynetCost.vue'
+import SynetHcm from '@/views/synet/SynetHcm.vue'
+import SynetTax from '@/views/synet/SynetTax.vue'
+
+//業務模組
+import SalesHome from '@/views/sales/SalesHome.vue'
+import SalesAnalysis from '@/views/sales/SalesAnalysis.vue'
+import SalesCost from '@/views/sales/SalesCost.vue'
+import SalesHcm from '@/views/sales/SalesHcm.vue'
+import SalesTax from '@/views/sales/SalesTax.vue'
+
+
+//RD模組
+import RdHome from '@/views/rd/RdHome.vue'
+import RdAnalysis from '@/views/rd/RdAnalysis.vue'
+import RdCost from '@/views/rd/RdCost.vue'
+import RdHcm from '@/views/rd/RdHcm.vue'
+import RdTax from '@/views/rd/RdTax.vue'
+
 //控制頁
 const controlRoutes = [
   {
@@ -159,6 +181,109 @@ const storeRoutes = [
   }
 ]
 
+//好思通國際股份有限公司
+const synet = [
+  {
+    path: '/synet/home',
+    name: 'SynetHome',
+    component: SynetHome,
+    meta: { layout: 'synet' }
+  },
+  {
+    path: '/synet/analysis',
+    name: 'SynetAnalysis',
+    component: SynetAnalysis,
+    meta: { layout: 'synet' }
+  },
+  {
+    path: '/synet/cost',
+    name: 'SynetCost',
+    component: SynetCost,
+    meta: { layout: 'synet' }
+  },
+  {
+    path: '/synet/hcm',
+    name: 'SynetHcm',
+    component: SynetHcm,
+    meta: { layout: 'synet' }
+  },
+  {
+    path: '/synet/tax',
+    name: 'SynetTax',
+    component: SynetTax,
+    meta: { layout: 'synet' }
+  }
+]
+
+//業務部門
+const sales = [
+  {
+    path: '/sales/home',
+    name: 'SalesHome',
+    component:SalesHome,
+    meta: { layout: 'sales' }
+  },
+  {
+    path: '/sales/analysis',
+    name: 'SalesAnalysis',
+    component:SalesAnalysis,
+    meta: { layout: 'sales' }
+  },
+  {
+    path: '/sales/cost',
+    name: 'SalesCost',
+    component: SalesCost,
+    meta: { layout: 'sales' }
+  },
+  {
+    path: '/sales/hcm',
+    name: 'SalesHcm',
+    component: SalesHcm,
+    meta: { layout: 'sales' }
+  },
+  {
+    path: '/sales/tax',
+    name: 'SalesTax',
+    component: SalesTax,
+    meta: { layout: 'sales' }
+  }
+]
+
+//R&D部門
+const rd = [
+  {
+    path: '/rd/home',
+    name: 'RdHome',
+    component: RdHome,
+    meta: { layout: 'rd' }
+  },
+  {
+    path: '/rd/analysis',
+    name: 'RdAnalysis',
+    component: RdAnalysis,
+    meta: { layout: 'rd' }
+  },
+  {
+    path: '/rd/cost',
+    name: 'RdCost',
+    component: RdCost,
+    meta: { layout: 'rd' }
+  },
+  {
+    path: '/rd/hcm',
+    name: 'RdHcm',
+    component: RdHcm,
+    meta: { layout: 'rd' }
+  },
+  {
+    path: '/rd/tax',
+    name: 'RdTax',
+    component: RdTax,
+    meta: { layout: 'rd' }
+  }
+]
+
+
 
 // 合併所有路由
 const routes = [
@@ -166,7 +291,10 @@ const routes = [
   ...partRoutes,
   ...workRoutes,
   ...salaryRoutes,
-  ...storeRoutes
+  ...storeRoutes,
+  ...synet,
+  ...sales,
+  ...rd
 ]
 
 const router = createRouter({

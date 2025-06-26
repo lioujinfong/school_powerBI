@@ -14,6 +14,12 @@ import zhSEP from './locales/sep/zh.json'
 import enSEP from './locales/sep/en.json'
 import zhStore from './locales/store/zh.json'
 import enStore from './locales/store/en.json'
+import zhSynet from './locales/synet/zh.json'
+import enSynet from './locales/synet/en.json'
+import zhSales from './locales/sales/zh.json'
+import enSales from './locales/sales/en.json'
+import zhRd from './locales/rd/zh.json'
+import enRd from './locales/rd/en.json'
 
 library.add(faHome, faCamera); // 添加需要的圖標
 
@@ -30,12 +36,19 @@ const i18n = createI18n({
     zh: { 
       ...zhISP, 
       ...zhSEP,
-      ...zhStore
+      ...zhStore,
+      ...zhSynet,
+      ...zhSales,
+      ...zhRd
     },
     en: { 
       ...enISP, 
       ...enSEP,
-      ...enStore 
+      ...enStore,
+      ...enSynet,
+      ...enSales,
+      ...enRd
+
     }
   }
 })  

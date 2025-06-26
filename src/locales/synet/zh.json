@@ -1,0 +1,14 @@
+{
+    "navbar_synet": {
+    "synetTitle": "好思通國際股份有限公司",
+    "user": "會員名稱"
+    },
+
+     "sidebar_synet": {
+    "home": "主頁",
+    "hcm": "人力資本管理",
+    "cost": "成本與花費",
+    "analysis": "主資料分析",
+    "tax": "稅務與負擔費用"
+  }
+}

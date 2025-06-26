@@ -1,0 +1,14 @@
+{
+    "navbar_rd": {
+    "rdTitle": "R&D Department",
+    "user": "Member Name"
+    },
+
+    "sidebar_rd": {
+    "home": "Home",
+    "hcm": "HCM",
+    "cost": "Cost & Expense",
+    "analysis": "Key Analysis",
+    "tax": "Tax & Fee"
+  }
+}

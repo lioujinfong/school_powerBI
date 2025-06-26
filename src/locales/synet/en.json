@@ -1,0 +1,14 @@
+{
+    "navbar_synet": {
+    "synetTitle": "Synet International Co., Ltd.",
+    "user": "Member Name"
+    },
+
+    "sidebar_synet": {
+    "home": "Home",
+    "hcm": "HCM",
+    "cost": "Cost & Expense",
+    "analysis": "Key Analysis",
+    "tax": "Tax & Fee"
+  }
+}
