@@ -1,32 +1,40 @@
 <template>
-  <div class="sep-layout">
-    <SepHeader />
+  <div class="store-layout">
+    <!-- 頂部導覽列 -->
+    <StoreHeader />
+
+    <!-- 主體區塊：側邊欄 + 內容 -->
     <div class="main-body">
       <div class="sidebar">
-        <SepSidebar />
+        <StoreSidebar />
       </div>
       <div class="content">
         <slot />
       </div>
     </div>
+
     <!-- Footer -->
     <CFooter />
   </div>
 </template>
 
 <script>
-import SepHeader from '@/components/sep/SepHeader.vue'
-import SepSidebar from '@/components/sep/SepSidebar.vue'
+import StoreHeader from '@/components/store/StoreHeader.vue'
+import StoreSidebar from '@/components/store/StoreSidebar.vue'
 import CFooter from '@/components/isp/CFooter.vue'
 
 export default {
-  name: 'SepLayout',
-  components: { SepSidebar, SepHeader,CFooter }
+  name: 'StoreLayout',
+  components: {
+    StoreHeader,
+    StoreSidebar,
+    CFooter
+  }
 }
 </script>
 
 <style scoped>
-.sep-layout {
+.store-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -34,21 +42,21 @@ export default {
 
 .main-body {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   flex: 1;
-  min-height: calc(100vh - 60px); 
+  min-height: calc(100vh - 60px);
   overflow: hidden;
 }
 
 .sidebar {
   width: 220px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   background-color: #f5f5f5;
   padding: 1rem;
   overflow-y: auto;
 }
 
-/* 手機上寬度改為 100% */
+/* 手機版側邊欄全寬 */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -59,12 +67,12 @@ export default {
   flex: 1;
   padding: 1.5rem;
   overflow-y: auto;
-  min-height: 0; 
+  min-height: 0;
 }
 
 @media (max-width: 768px) {
   .main-body {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .content {

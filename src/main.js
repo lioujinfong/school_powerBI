@@ -12,7 +12,8 @@ import zhISP from './locales/isp/zh.json'
 import enISP from './locales/isp/en.json'
 import zhSEP from './locales/sep/zh.json'
 import enSEP from './locales/sep/en.json'
-
+import zhStore from './locales/store/zh.json'
+import enStore from './locales/store/en.json'
 
 library.add(faHome, faCamera); // 添加需要的圖標
 
@@ -26,10 +27,18 @@ const i18n = createI18n({
   locale: savedLocale,
   fallbackLocale: 'en',
   messages: {
-    zh: { ...zhISP, ...zhSEP },
-    en: { ...enISP, ...enSEP }
+    zh: { 
+      ...zhISP, 
+      ...zhSEP,
+      ...zhStore
+    },
+    en: { 
+      ...enISP, 
+      ...enSEP,
+      ...enStore 
+    }
   }
-})
+})  
 
 app.use(router).component('font-awesome-icon', FontAwesomeIcon);
 app.use(i18n)

@@ -23,6 +23,13 @@ import SepCost from '../views/sep/SepCost.vue'
 import SepAnalysis from '../views/sep/SepAnalysis.vue'
 import SepTax from '../views/sep/SepTax.vue'
 
+// store 模組
+import StoreHome from '@/views/store/StoreHome.vue'
+import StoreAnalysis from '@/views/store/StoreAnalysis.vue'
+import StoreCost from '@/views/store/StoreCost.vue'
+import StoreHcm from '@/views/store/StoreHcm.vue'
+import StoreTax from '@/views/store/StoreTax.vue'
+
 //控制頁
 const controlRoutes = [
   {
@@ -116,14 +123,50 @@ const salaryRoutes = [
     component: SepTax,
     meta: { layout: 'sep' }
   }
+
 ]
+//店家
+const storeRoutes = [
+  {
+    path: '/store/home',
+    name: 'StoreHome',
+    component: StoreHome,
+    meta: { layout: 'store' }
+  },
+  {
+    path: '/store/analysis',
+    name: 'StoreAnalysis',
+    component: StoreAnalysis,
+    meta: { layout: 'store' }
+  },
+  {
+    path: '/store/cost',
+    name: 'StoreCost',
+    component: StoreCost,
+    meta: { layout: 'store' }
+  },
+  {
+    path: '/store/hcm',
+    name: 'StoreHcm',
+    component: StoreHcm,
+    meta: { layout: 'store' }
+  },
+  {
+    path: '/store/tax',
+    name: 'StoreTax',
+    component: StoreTax,
+    meta: { layout: 'store' }
+  }
+]
+
 
 // 合併所有路由
 const routes = [
   ...controlRoutes,
   ...partRoutes,
   ...workRoutes,
-  ...salaryRoutes
+  ...salaryRoutes,
+  ...storeRoutes
 ]
 
 const router = createRouter({

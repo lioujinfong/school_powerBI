@@ -18,6 +18,11 @@
     <router-link to="/sep/home" class="enter-button">
       {{ $t('controller.salaryPlatform') }}
     </router-link>
+
+    <!-- 店家 -->
+    <router-link to="/store/home" class="enter-button">
+      {{ $t('navbar_store.storeTitle') }}
+    </router-link>
   </div>
 </template>
 
