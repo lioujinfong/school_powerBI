@@ -8,5 +8,5 @@ module.exports = defineConfig({
     port: 8787,
     allowedHosts: 'all',
   },
-  publicPath: '/my-vue-demo/'
+  publicPath: '/school_powerBI/'
 })
