@@ -14,30 +14,35 @@
       {{ $t('controller.enter') }}
     </router-link>
 
-    <!-- 薪資概算平台按鈕 -->
+    <!-- 薪資概算平台按鈕 
     <router-link to="/sep/home" class="enter-button">
       {{ $t('controller.salaryPlatform') }}
     </router-link>
+    -->
 
-    <!-- 店家 -->
+    <!-- 店家 
     <router-link to="/store/home" class="enter-button">
       {{ $t('navbar_store.storeTitle') }}
     </router-link>
+    -->
 
-    <!-- 好思通國際股份有限公司 -->
+    <!-- 好思通國際股份有限公司 
     <router-link to="/synet/home" class="enter-button">
       {{ $t('navbar_synet.synetTitle') }}
     </router-link>
+    -->
 
-    <!-- 業務部門 -->
+    <!-- 業務部門 
     <router-link to="/sales/home" class="enter-button">
       {{ $t('navbar_sales.salesTitle') }}
     </router-link>
+    -->
 
-    <!-- R&D部門 -->
+    <!-- R&D部門 
     <router-link to="/rd/home" class="enter-button">
       {{ $t('navbar_rd.rdTitle') }}
     </router-link>
+    -->
   </div>
 </template>
 
